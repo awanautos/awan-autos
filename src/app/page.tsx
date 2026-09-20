@@ -247,7 +247,14 @@ export default function Home() {
               [ASSET("/images/pump/pump-car-wash.png"), "Car Wash", "Vehicle care at Awan Autos."],
               [ASSET("/images/pump/pump-fuel-dispenser.png"), "Fuel Dispensers", "Petrol and diesel fueling area."],
             ].map(([image, title, text]) => (
-              <div key={title} className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.04]">
+              <motion.div
+                key={title}
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.55, delay: 0.08 }}
+                className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.04]"
+              >
                 <div className="overflow-hidden">
                   <img src={image} alt={title} className="h-72 w-full object-cover transition duration-500 group-hover:scale-105" />
                 </div>
@@ -255,7 +262,7 @@ export default function Home() {
                   <div className="text-lg font-bold">{title}</div>
                   <div className="mt-1 text-[14px] font-medium tracking-[.02em] text-white/45">{text}</div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
