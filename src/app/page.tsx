@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "motion/react";
 
 const ASSET = (path: string) =>
   process.env.NODE_ENV === "production" ? `/awan-autos${path}` : path;
@@ -106,7 +107,12 @@ export default function Home() {
         </div>
 
         <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[1.1fr_.9fr] lg:gap-12">
-          <div className="max-w-3xl">
+          <motion.div
+            className="max-w-3xl"
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <h1 className="text-[clamp(3.4rem,15vw,5rem)] font-black leading-[.88] tracking-[-.02em] sm:text-7xl lg:text-[92px]">
               AWAN
               <span className="block text-[#fbcf24]">AUTOS</span>
@@ -154,9 +160,8 @@ export default function Home() {
                 <div className="mt-1 text-[11px] font-semibold uppercase tracking-[.14em] text-white/45">On Your Mind</div>
               </div>
             </div>
-          </div>
-
-          </div>
+          </motion.div>
+        </div>
       </section>
 
       <section id="services" className="scroll-mt-24 relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
@@ -173,8 +178,12 @@ export default function Home() {
 
           <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
             {services.map(([number, title, text, image]) => (
-              <div
+              <motion.div
                 key={number}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: Number(number) * 0.08 }}
                 className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/[.07] to-white/[.025] p-6 transition duration-300 hover:-translate-y-2 hover:border-[#fbcf24]/30"
               >
                 <img
@@ -186,7 +195,7 @@ export default function Home() {
                 <h3 className="mt-5 text-xl font-bold">{title}</h3>
                 <p className="mt-3 text-[15px] leading-7 tracking-[.01em] text-white/50">{text}</p>
                 <div className="mt-6 h-px w-10 bg-[#fbcf24]/50 transition-all duration-300 group-hover:w-full" />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
