@@ -202,7 +202,13 @@ export default function Home() {
       </section>
 
       <section id="about" className="scroll-mt-24 relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
-        <div className="mx-auto grid max-w-7xl gap-8 sm:gap-12 lg:grid-cols-2 lg:items-center">
+        <motion.div
+          className="mx-auto grid max-w-7xl gap-8 sm:gap-12 lg:grid-cols-2 lg:items-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <div>
             <div className="text-xs font-bold uppercase tracking-[.3em] text-[#fbcf24]">
               About Awan Autos
@@ -230,7 +236,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
 
@@ -269,7 +275,13 @@ export default function Home() {
       </section>
 
       <section id="location" className="scroll-mt-24 border-t border-white/10 px-5 py-24 sm:px-8">
-        <div className="mx-auto max-w-7xl">
+        <motion.div
+          className="mx-auto max-w-7xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[.07] via-white/[.03] to-transparent">
             <div className="grid lg:grid-cols-[1.3fr_.7fr]">
               <div className="p-7 sm:p-10 lg:p-14">
@@ -321,11 +333,17 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section id="contact" className="scroll-mt-24 border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
-        <div className="mx-auto max-w-7xl">
+        <motion.div
+          className="mx-auto max-w-7xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <div className="grid gap-4 sm:gap-5 md:grid-cols-3">
             <a
               href="tel:03337844515"
@@ -353,7 +371,7 @@ export default function Home() {
               <div className="mt-3 inline-flex text-[13px] font-bold tracking-[.08em] text-[#fbcf24] transition hover:tracking-[.12em]">Message Us →</div>
             </a>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <footer className="border-t border-white/[.08] bg-white/[.015] px-5 py-12 sm:px-8">
