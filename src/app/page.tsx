@@ -2,12 +2,15 @@
 
 import { useState } from "react";
 
+const ASSET = (path: string) =>
+  process.env.NODE_ENV === "production" ? `/awan-autos${path}` : path;
+
 const services = [
-  ["01", "Petrol", "Quality fuel for everyday journeys.", "/images/services/01-petrol.png"],
-  ["02", "Diesel", "Reliable fuel for every journey.", "/images/services/02-diesel.jpg"],
-  ["03", "Engine Oil & Lubricants", "Trusted care for smoother engine performance.", "/images/services/03-engine-oil-lubricants.png"],
-  ["04", "Car Wash", "Professional care for a cleaner vehicle.", "/images/pump/pump-car-wash.png"],
-  ["05", "Oil Change", "Oil check and change for dependable engine care.", "/images/services/oil-change.png"],
+  ["01", "Petrol", "Quality fuel for everyday journeys.", ASSET("/images/services/01-petrol.png")],
+  ["02", "Diesel", "Reliable fuel for every journey.", ASSET("/images/services/02-diesel.jpg")],
+  ["03", "Engine Oil & Lubricants", "Trusted care for smoother engine performance.", ASSET("/images/services/03-engine-oil-lubricants.png")],
+  ["04", "Car Wash", "Professional care for a cleaner vehicle.", ASSET("/images/pump/pump-car-wash.png")],
+  ["05", "Oil Change", "Oil check and change for dependable engine care.", ASSET("/images/services/oil-change.png")],
 ];
 
 export default function Home() {
@@ -94,7 +97,7 @@ export default function Home() {
           <div className="animate-[float_7s_ease-in-out_infinite]">
 
           <img
-            src="/images/shell-pecten.png"
+            src={ASSET("/images/shell-pecten.png")}
             alt=""
             aria-hidden="true"
             className="w-full drop-shadow-[0_25px_70px_rgba(251,207,36,.25)] [transform:none]"
@@ -229,11 +232,11 @@ export default function Home() {
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {[
-              ["/images/pump/pump-office.png", "Awan Autos", "Our location and business frontage."],
-              ["/images/pump/pump-canopy.png", "Fuel Station", "Our main fueling area."],
-              ["/images/pump/pump-sign.png", "Shell Station", "Our station signage."],
-              ["/images/pump/pump-car-wash.png", "Car Wash", "Vehicle care at Awan Autos."],
-              ["/images/pump/pump-fuel-dispenser.png", "Fuel Dispensers", "Petrol and diesel fueling area."],
+              [ASSET("/images/pump/pump-office.png"), "Awan Autos", "Our location and business frontage."],
+              [ASSET("/images/pump/pump-canopy.png"), "Fuel Station", "Our main fueling area."],
+              [ASSET("/images/pump/pump-sign.png"), "Shell Station", "Our station signage."],
+              [ASSET("/images/pump/pump-car-wash.png"), "Car Wash", "Vehicle care at Awan Autos."],
+              [ASSET("/images/pump/pump-fuel-dispenser.png"), "Fuel Dispensers", "Petrol and diesel fueling area."],
             ].map(([image, title, text]) => (
               <div key={title} className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.04]">
                 <div className="overflow-hidden">
