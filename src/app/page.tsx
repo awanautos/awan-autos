@@ -577,17 +577,20 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-white/[.08] bg-white/[.015] px-5 py-12 sm:px-8">
+      <footer className="border-t border-white/[.08] bg-white/[.015] px-5 py-12 text-center sm:px-8">
         <div className="text-xl font-black tracking-[.12em]">
           AWAN <span className="text-[#fbcf24]">AUTOS</span>
         </div>
+
         <div className="mt-2 text-[13px] font-medium tracking-[.025em] text-white/40">
           Fuel • Auto Care • Trusted Service
         </div>
+
         <div className="mt-2 text-[10px] font-bold uppercase tracking-[.25em] text-[#fbcf24]/75">
           Shell-Branded Service Station • Wafi Energy Pakistan
         </div>
-        <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[11px] font-semibold uppercase tracking-[.12em] text-white/35">
+
+        <div className="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] font-semibold uppercase tracking-[.12em] text-white/35">
           <a href="#home" className="transition hover:text-[#fbcf24]">Home</a>
           <a href="#services" className="transition hover:text-[#fbcf24]">Services</a>
           <a href="#about" className="transition hover:text-[#fbcf24]">About</a>
@@ -596,6 +599,7 @@ export default function Home() {
           <a href="#contact" className="transition hover:text-[#fbcf24]">Contact</a>
           <a href="#privacy" className="transition hover:text-[#fbcf24]">Privacy</a>
         </div>
+
         <div className="mt-5 text-[12px] font-medium tracking-[.03em] text-white/35">
           © {new Date().getFullYear()} Awan Autos. All rights reserved.
         </div>
