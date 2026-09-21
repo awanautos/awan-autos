@@ -198,3 +198,179 @@ h2,
 h3 {
   font-family: var(--font-playfair), serif;
 }
+
+/* ===== AWAN AUTOS — PREMIUM PROFESSIONAL POLISH ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080808;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: #fbcf24;
+  color: #050505;
+}
+
+/* Premium glass surfaces */
+header {
+  border-bottom-color: rgba(251,207,36,.12) !important;
+  background: rgba(5,5,5,.82) !important;
+  box-shadow: 0 10px 40px rgba(0,0,0,.22);
+}
+
+/* Smooth premium cards */
+main section > div,
+main article {
+  transition:
+    transform .35s cubic-bezier(.22,1,.36,1),
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+/* Images feel richer without changing the actual photos */
+img {
+  transition:
+    transform .6s cubic-bezier(.22,1,.36,1),
+    filter .4s ease;
+}
+
+a:hover img {
+  transform: scale(1.025);
+}
+
+/* Buttons */
+a[class*="bg-[#fbcf24]"],
+button[class*="bg-[#fbcf24]"] {
+  position: relative;
+  overflow: hidden;
+}
+
+a[class*="bg-[#fbcf24]"]::after,
+button[class*="bg-[#fbcf24]"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 20%,
+    rgba(255,255,255,.32) 45%,
+    transparent 70%
+  );
+  transform: translateX(-120%);
+  transition: transform .65s ease;
+}
+
+a[class*="bg-[#fbcf24]"]:hover::after,
+button[class*="bg-[#fbcf24]"]:hover::after {
+  transform: translateX(120%);
+}
+
+/* Section spacing + premium separators */
+section {
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(92%, 1150px);
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(251,207,36,.18),
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* Headings */
+h2 {
+  letter-spacing: -0.035em;
+}
+
+h3 {
+  letter-spacing: -0.02em;
+}
+
+/* Premium focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #fbcf24;
+  outline-offset: 4px;
+}
+
+/* Mobile refinement */
+@media (max-width: 767px) {
+  header {
+    box-shadow: 0 8px 30px rgba(0,0,0,.35);
+  }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+
+/* ===== AWAN AUTOS — OBSIDIAN LUXURY BACKGROUND ===== */
+
+body {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(251,207,36,.075), transparent 24%),
+    radial-gradient(circle at 12% 42%, rgba(255,255,255,.035), transparent 28%),
+    radial-gradient(circle at 55% 100%, rgba(251,207,36,.035), transparent 30%),
+    linear-gradient(135deg, #050505 0%, #0a0a0a 42%, #070707 100%);
+  background-attachment: fixed;
+}
+
+main {
+  background:
+    linear-gradient(
+      115deg,
+      rgba(255,255,255,.012) 0%,
+      transparent 25%,
+      rgba(251,207,36,.012) 50%,
+      transparent 75%
+    );
+}
+
+/* Very subtle luxury grid texture */
+main::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: .18;
+  background-image:
+    linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black, transparent 85%);
+}
+
+/* Keep content above background texture */
+main > * {
+  position: relative;
+  z-index: 1;
+}
+
