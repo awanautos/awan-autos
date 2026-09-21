@@ -21,6 +21,7 @@ export default function Home() {
     ["Home", "#home"],
     ["Services", "#services"],
     ["About", "#about"],
+    ["Gallery", "#gallery"],
     ["Location", "#location"],
     ["Contact", "#contact"],
   ];
@@ -34,7 +35,7 @@ export default function Home() {
               AWAN <span className="text-[#fbcf24]">AUTOS</span>
             </div>
             <div className="mt-1 hidden w-fit rounded-full border border-[#fbcf24]/20 bg-[#fbcf24]/5 px-3 py-1 text-[8px] font-semibold uppercase tracking-[.12em] leading-none text-[#fbcf24] sm:block">
-              Dealers • Shell Pakistan Limited
+              Shell-Branded Service Station
             </div>
           </a>
 
@@ -119,7 +120,7 @@ export default function Home() {
             </h1>
 
             <div className="mt-4 inline-flex rounded-full border border-[#fbcf24]/20 bg-[#fbcf24]/5 px-3.5 py-2 text-[10px] font-semibold uppercase tracking-[.16em] text-[#fbcf24] sm:mt-5 sm:px-4 sm:text-xs sm:tracking-[.2em]">
-              Dealers • Shell Pakistan Limited
+              Shell-Branded Service Station
             </div>
 
             <p className="mt-6 max-w-xl text-[15px] font-medium leading-8 tracking-[.015em] text-white/60 sm:mt-7 sm:text-xl sm:leading-8">
@@ -374,6 +375,208 @@ export default function Home() {
         </motion.div>
       </section>
 
+
+      <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
+        <motion.div
+          className="mx-auto max-w-7xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <div className="max-w-2xl">
+            <div className="text-xs font-bold uppercase tracking-[.3em] text-[#fbcf24]">
+              Why Awan Autos
+            </div>
+            <h2 className="mt-4 text-4xl font-black leading-tight tracking-[-.02em] sm:text-6xl lg:text-[64px]">
+              Simple service.
+              <span className="block text-white/35">Reliable essentials.</span>
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["01", "Quality Fuel", "Fuel for your everyday journeys with a focus on quality and consistency."],
+              ["02", "Genuine Lubricants", "Shell lubricants and automotive essentials for dependable vehicle care."],
+              ["03", "Vehicle Care", "Car wash and oil change services in one convenient destination."],
+              ["04", "Customer Care", "A straightforward, welcoming stop for drivers in Quetta."],
+            ].map(([number, title, text]) => (
+              <motion.div
+                key={number}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.5, delay: Number(number) * 0.07 }}
+                className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/[.07] to-white/[.025] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#fbcf24]/30"
+              >
+                <div className="text-sm font-black text-[#fbcf24]">{number}</div>
+                <h3 className="mt-5 text-xl font-bold">{title}</h3>
+                <p className="mt-3 text-[14px] leading-7 tracking-[.01em] text-white/50">{text}</p>
+                <div className="mt-6 h-px w-10 bg-[#fbcf24]/50 transition-all duration-300 group-hover:w-full" />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
+        <motion.div
+          className="mx-auto max-w-7xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <div className="max-w-2xl">
+            <div className="text-xs font-bold uppercase tracking-[.3em] text-[#fbcf24]">
+              Service Details
+            </div>
+            <h2 className="mt-4 text-4xl font-black leading-tight tracking-[-.02em] sm:text-6xl lg:text-[64px]">
+              Everything you need.
+              <span className="block text-white/35">In one stop.</span>
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              ["Petrol", "Quality fuel for daily driving, commuting and long journeys."],
+              ["Diesel", "Reliable diesel fuel for vehicles that depend on efficient performance."],
+              ["Engine Oil & Lubricants", "Shell lubricants and automotive products for everyday engine care."],
+              ["Car Wash", "A convenient vehicle-cleaning service to keep your car looking fresh."],
+              ["Oil Change", "Oil check and change service for routine engine maintenance."],
+            ].map(([title, text]) => (
+              <div
+                key={title}
+                className="rounded-3xl border border-white/10 bg-white/[.035] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#fbcf24]/30 sm:p-7"
+              >
+                <h3 className="text-xl font-bold">{title}</h3>
+                <p className="mt-3 text-[14px] leading-7 tracking-[.01em] text-white/50">{text}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
+        <motion.div
+          className="mx-auto max-w-7xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <div className="max-w-2xl">
+            <div className="text-xs font-bold uppercase tracking-[.3em] text-[#fbcf24]">
+              Our Heritage
+            </div>
+            <h2 className="mt-4 text-4xl font-black leading-tight tracking-[-.02em] sm:text-6xl lg:text-[64px]">
+              A legacy in Pakistan.
+              <span className="block text-white/35">A new chapter.</span>
+            </h2>
+          </div>
+
+          <div className="mt-10 rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[.07] via-white/[.03] to-transparent p-7 sm:p-10 lg:p-12">
+            <p className="max-w-4xl text-[15px] font-medium leading-8 tracking-[.015em] text-white/60 sm:text-lg">
+              Shell's long-standing presence in Pakistan has evolved through different chapters.
+              Pakistan Burmah Shell became Shell Pakistan Limited in 1993. In 2024, Wafi Energy
+              Holding Limited acquired a controlling stake in Shell Pakistan, and in January 2025
+              the company became Wafi Energy Pakistan Limited. Today, Wafi Energy Pakistan is
+              the exclusive licensee of the Shell brand for fuels and lubricants in Pakistan.
+            </p>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
+        <motion.div
+          className="mx-auto max-w-7xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <div className="max-w-2xl">
+            <div className="text-xs font-bold uppercase tracking-[.3em] text-[#fbcf24]">
+              Customer Reviews
+            </div>
+            <h2 className="mt-4 text-4xl font-black leading-tight tracking-[-.02em] sm:text-6xl lg:text-[64px]">
+              Your experience.
+              <span className="block text-white/35">Your feedback.</span>
+            </h2>
+          </div>
+
+          <div className="mt-10 rounded-[2rem] border border-white/10 bg-white/[.035] p-7 sm:p-10">
+            <p className="max-w-3xl text-[15px] font-medium leading-8 tracking-[.015em] text-white/55 sm:text-lg">
+              We value every customer visit. Genuine customer feedback helps us continue
+              improving the experience at Awan Autos.
+            </p>
+            <a
+              href="#contact"
+              className="mt-7 inline-flex rounded-full bg-[#fbcf24] px-7 py-3.5 text-sm font-extrabold text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(251,207,36,.18)]"
+            >
+              Share Your Feedback →
+            </a>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
+        <motion.div
+          className="mx-auto max-w-7xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <div className="max-w-2xl">
+            <div className="text-xs font-bold uppercase tracking-[.3em] text-[#fbcf24]">
+              Frequently Asked
+            </div>
+            <h2 className="mt-4 text-4xl font-black leading-tight tracking-[-.02em] sm:text-6xl lg:text-[64px]">
+              Questions.
+              <span className="block text-white/35">Answered simply.</span>
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-4 lg:grid-cols-2">
+            {[
+              ["Where is Awan Autos located?", "We are located on Shara-e-Zarghoon, Quetta, Balochistan."],
+              ["What are the opening hours?", "Awan Autos is open daily from 6:00 AM to 12:00 AM."],
+              ["What services are available?", "Petrol, diesel, engine oil and lubricants, car wash and oil change services are available."],
+              ["Can I contact Awan Autos on WhatsApp?", "Yes. Use the WhatsApp button on this website to contact us directly."],
+              ["How can I get directions?", "Use the Get Directions button in the Location section to open the map."],
+              ["Does the website collect customer information?", "There is currently no customer registration or contact form on this website. Calls and WhatsApp open through external services."],
+            ].map(([question, answer]) => (
+              <div
+                key={question}
+                className="rounded-3xl border border-white/10 bg-white/[.035] p-6 sm:p-7"
+              >
+                <h3 className="text-lg font-bold">{question}</h3>
+                <p className="mt-3 text-[14px] leading-7 tracking-[.01em] text-white/50">{answer}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
+      <section id="privacy" className="relative border-t border-white/10 px-5 py-16 sm:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-xs font-bold uppercase tracking-[.3em] text-[#fbcf24]">
+            Privacy
+          </div>
+          <h2 className="mt-4 text-3xl font-black tracking-[-.02em] sm:text-4xl">
+            Privacy Policy
+          </h2>
+          <p className="mt-5 max-w-4xl text-[14px] leading-7 tracking-[.01em] text-white/45">
+            Awan Autos respects your privacy. This website does not currently provide customer
+            accounts, registrations or online forms. When you choose to call, use WhatsApp or
+            open Google Maps, you interact with those external services under their respective
+            privacy policies. We do not ask you to submit sensitive personal information through
+            this website.
+          </p>
+        </div>
+      </section>
+
       <footer className="border-t border-white/[.08] bg-white/[.015] px-5 py-12 sm:px-8">
         <div className="text-xl font-black tracking-[.12em]">
           AWAN <span className="text-[#fbcf24]">AUTOS</span>
@@ -382,7 +585,16 @@ export default function Home() {
           Fuel • Auto Care • Trusted Service
         </div>
         <div className="mt-2 text-[10px] font-bold uppercase tracking-[.25em] text-[#fbcf24]/75">
-          Dealers: Shell Pakistan Limited
+          Shell-Branded Service Station • Wafi Energy Pakistan
+        </div>
+        <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[11px] font-semibold uppercase tracking-[.12em] text-white/35">
+          <a href="#home" className="transition hover:text-[#fbcf24]">Home</a>
+          <a href="#services" className="transition hover:text-[#fbcf24]">Services</a>
+          <a href="#about" className="transition hover:text-[#fbcf24]">About</a>
+          <a href="#gallery" className="transition hover:text-[#fbcf24]">Gallery</a>
+          <a href="#location" className="transition hover:text-[#fbcf24]">Location</a>
+          <a href="#contact" className="transition hover:text-[#fbcf24]">Contact</a>
+          <a href="#privacy" className="transition hover:text-[#fbcf24]">Privacy</a>
         </div>
         <div className="mt-5 text-[12px] font-medium tracking-[.03em] text-white/35">
           © {new Date().getFullYear()} Awan Autos. All rights reserved.
