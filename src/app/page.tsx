@@ -6,11 +6,11 @@ import { motion } from "motion/react";
 const ASSET = (path: string) => path;
 
 const services = [
-  ["01", "Petrol", "Quality fuel for everyday journeys.", ASSET("/images/services/01-petrol.png")],
-  ["02", "Diesel", "Reliable fuel for every journey.", ASSET("/images/services/02-diesel.jpg")],
-  ["03", "Engine Oil & Lubricants", "Trusted care for smoother engine performance.", ASSET("/images/services/03-engine-oil-lubricants.png")],
-  ["04", "Car Wash", "Professional care for a cleaner vehicle.", ASSET("/images/pump/pump-car-wash.png")],
-  ["05", "Oil Change", "Oil check and change for dependable engine care.", ASSET("/images/services/oil-change.png")],
+  ["01", "Petrol", "Quality fuel for everyday journeys.", ASSET("/images/optimized/01-petrol.webp")],
+  ["02", "Diesel", "Reliable fuel for every journey.", ASSET("/images/optimized/02-diesel.webp")],
+  ["03", "Engine Oil & Lubricants", "Trusted care for smoother engine performance.", ASSET("/images/optimized/03-engine-oil-lubricants.webp")],
+  ["04", "Car Wash", "Professional care for a cleaner vehicle.", ASSET("/images/optimized/pump-car-wash.webp")],
+  ["05", "Oil Change", "Oil check and change for dependable engine care.", ASSET("/images/optimized/oil-change.webp")],
 ];
 
 export default function Home() {
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="animate-[float_7s_ease-in-out_infinite]">
 
           <img
-            src={ASSET("/images/shell-pecten.png")}
+            src={ASSET("/images/optimized/shell-pecten.webp")}
             alt=""
             aria-hidden="true"
             className="w-full drop-shadow-[0_25px_70px_rgba(251,207,36,.25)] [transform:none]"
@@ -242,11 +242,11 @@ export default function Home() {
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {[
-              [ASSET("/images/pump/pump-office.png"), "Awan Autos", "Our location and business frontage."],
-              [ASSET("/images/pump/pump-canopy.png"), "Fuel Station", "Our main fueling area."],
-              [ASSET("/images/pump/pump-sign.png"), "Shell Station", "Our station signage."],
-              [ASSET("/images/pump/pump-car-wash.png"), "Car Wash", "Vehicle care at Awan Autos."],
-              [ASSET("/images/pump/pump-fuel-dispenser.png"), "Fuel Dispensers", "Petrol and diesel fueling area."],
+              [ASSET("/images/optimized/pump-office.webp"), "Awan Autos", "Our location and business frontage."],
+              [ASSET("/images/optimized/pump-canopy.webp"), "Fuel Station", "Our main fueling area."],
+              [ASSET("/images/optimized/pump-sign.webp"), "Shell Station", "Our station signage."],
+              [ASSET("/images/optimized/pump-car-wash.webp"), "Car Wash", "Vehicle care at Awan Autos."],
+              [ASSET("/images/optimized/pump-fuel-dispenser.webp"), "Fuel Dispensers", "Petrol and diesel fueling area."],
             ].map(([image, title, text]) => (
               <motion.div
                 key={title}
