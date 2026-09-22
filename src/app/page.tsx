@@ -109,9 +109,6 @@ export default function Home() {
         <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[1.1fr_.9fr] lg:gap-12">
           <motion.div
             className="max-w-3xl"
-            initial={{ opacity: 0, y: 35 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="text-[clamp(3.4rem,15vw,5rem)] font-black leading-[.88] tracking-[-.02em] sm:text-7xl lg:text-[92px]">
               AWAN
