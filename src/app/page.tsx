@@ -177,7 +177,7 @@ export default function Home() {
             {services.map(([number, title, text, image]) => (
               <motion.div
                 key={number}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5, delay: Number(number) * 0.08 }}
                 className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/[.07] to-white/[.025] p-6 transition duration-300 hover:-translate-y-2 hover:border-[#fbcf24]/30"
@@ -200,7 +200,7 @@ export default function Home() {
       <section id="about" className="scroll-mt-24 relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
         <motion.div
           className="mx-auto grid max-w-7xl gap-8 sm:gap-12 lg:grid-cols-2 lg:items-center"
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -250,7 +250,7 @@ export default function Home() {
             ].map(([image, title, text]) => (
               <motion.div
                 key={title}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.55, delay: 0.08 }}
                 className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.04]"
@@ -271,7 +271,7 @@ export default function Home() {
       <section id="location" className="scroll-mt-24 border-t border-white/10 px-5 py-24 sm:px-8">
         <motion.div
           className="mx-auto max-w-7xl"
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -332,7 +332,7 @@ export default function Home() {
       <section id="contact" className="scroll-mt-24 border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
         <motion.div
           className="mx-auto max-w-7xl"
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -370,7 +370,7 @@ export default function Home() {
       <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
         <motion.div
           className="mx-auto max-w-7xl"
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -393,7 +393,7 @@ export default function Home() {
             ].map(([number, title, text]) => (
               <motion.div
                 key={number}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.5, delay: Number(number) * 0.07 }}
                 className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/[.07] to-white/[.025] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#fbcf24]/30"
@@ -411,7 +411,7 @@ export default function Home() {
       <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
         <motion.div
           className="mx-auto max-w-7xl"
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -448,7 +448,7 @@ export default function Home() {
       <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
         <motion.div
           className="mx-auto max-w-7xl"
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -477,7 +477,7 @@ export default function Home() {
       <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
         <motion.div
           className="mx-auto max-w-7xl"
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -509,7 +509,7 @@ export default function Home() {
       <section className="relative border-t border-white/10 px-5 py-20 sm:px-8 lg:py-24">
         <motion.div
           className="mx-auto max-w-7xl"
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
