@@ -354,7 +354,7 @@ main {
 /* Very subtle luxury grid texture */
 main::after {
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 0;
@@ -363,6 +363,7 @@ main::after {
     linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
   background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(circle at center, black, transparent 85%);
   mask-image: radial-gradient(circle at center, black, transparent 85%);
 }
 
