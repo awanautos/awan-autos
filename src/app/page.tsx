@@ -3,8 +3,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 
-const ASSET = (path: string) =>
-  process.env.NODE_ENV === "production" ? `/awan-autos${path}` : path;
+const ASSET = (path: string) => path;
 
 const services = [
   ["01", "Petrol", "Quality fuel for everyday journeys.", ASSET("/images/services/01-petrol.png")],
