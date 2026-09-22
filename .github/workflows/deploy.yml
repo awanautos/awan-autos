@@ -43,7 +43,8 @@ jobs:
       - name: Verify exported site
         run: |
           test -f out/index.html
-          grep -q "AWAN" out/index.html
+          grep -q "AWAN AUTOS" out/index.html
+          ! grep -q "This is a Next.js project bootstrapped" out/index.html
           echo "Awan Autos production build verified successfully."
 
       - name: Upload Pages artifact
