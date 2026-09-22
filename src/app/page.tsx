@@ -256,7 +256,7 @@ export default function Home() {
                 className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.04]"
               >
                 <div className="overflow-hidden">
-                  <img src={image} alt={title} className="h-72 w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <img src={image} alt={title} loading="lazy" decoding="async" className="h-72 w-full object-cover transition duration-500 group-hover:scale-105" />
                 </div>
                 <div className="p-5">
                   <div className="text-lg font-bold">{title}</div>
