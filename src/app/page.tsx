@@ -178,7 +178,7 @@ export default function Home() {
               <motion.div
                 key={number}
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5, delay: Number(number) * 0.08 }}
                 className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/[.07] to-white/[.025] p-6 transition duration-300 hover:-translate-y-2 hover:border-[#fbcf24]/30"
@@ -202,7 +202,7 @@ export default function Home() {
         <motion.div
           className="mx-auto grid max-w-7xl gap-8 sm:gap-12 lg:grid-cols-2 lg:items-center"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -253,7 +253,7 @@ export default function Home() {
               <motion.div
                 key={title}
                 initial={{ opacity: 0, y: 35 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.55, delay: 0.08 }}
                 className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.04]"
@@ -275,7 +275,7 @@ export default function Home() {
         <motion.div
           className="mx-auto max-w-7xl"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -337,7 +337,7 @@ export default function Home() {
         <motion.div
           className="mx-auto max-w-7xl"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -376,7 +376,7 @@ export default function Home() {
         <motion.div
           className="mx-auto max-w-7xl"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -400,7 +400,7 @@ export default function Home() {
               <motion.div
                 key={number}
                 initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.5, delay: Number(number) * 0.07 }}
                 className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/[.07] to-white/[.025] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#fbcf24]/30"
@@ -419,7 +419,7 @@ export default function Home() {
         <motion.div
           className="mx-auto max-w-7xl"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -457,7 +457,7 @@ export default function Home() {
         <motion.div
           className="mx-auto max-w-7xl"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -487,7 +487,7 @@ export default function Home() {
         <motion.div
           className="mx-auto max-w-7xl"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
@@ -520,7 +520,7 @@ export default function Home() {
         <motion.div
           className="mx-auto max-w-7xl"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
