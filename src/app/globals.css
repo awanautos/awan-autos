@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #080808;
   --foreground: #171717;
 }
 
@@ -17,6 +17,11 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+html, body {
+  background: #080808;
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -40,7 +45,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: #080808; overscroll-behavior-y: none; }
 
 
 /* Awan Autos — Premium Motion System */
@@ -152,6 +157,13 @@ img {
 /* Awan Autos — Title Case Typography */
 body {
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  main::after { display: none; }
+  body { background-attachment: scroll; }
+  main::after { opacity: .08; }
+  section { isolation: isolate; }
 }
 
 /* Awan Autos — Premium Micro Interactions */
@@ -272,6 +284,8 @@ button[class*="bg-[#fbcf24]"]:hover::after {
 /* Section spacing + premium separators */
 section { animation: none; }
 
+section { position: relative; }
+
 section::before {
   content: "";
   position: absolute;
@@ -341,6 +355,7 @@ body {
 }
 
 main {
+  position: relative;
   background:
     linear-gradient(
       115deg,
