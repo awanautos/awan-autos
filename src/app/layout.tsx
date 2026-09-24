@@ -13,14 +13,36 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "AWAN AUTOS | Quality Fuel & Auto Care | Quetta",
-  description: "AWAN AUTOS on Shara-e-Zarghoon, Quetta — quality fuel, vehicle care and trusted automotive services. Quantity and Quality Assured.",
-  keywords: ["Awan Autos", "Awan Autos Quetta", "Shara-e-Zarghoon", "Quetta petrol pump", "fuel station Quetta", "Shell Pakistan"],
+  metadataBase: new URL("https://awanautos.cyou"),
+  title: "AWAN AUTOS | Shell Service Station Quetta",
+  description: "AWAN AUTOS is a Shell-branded service station on Shara-e-Zarghoon, Quetta, offering quality fuel, lubricants, car wash and vehicle care services.",
+  keywords: [
+    "Awan Autos",
+    "Awan Autos Quetta",
+    "Shell Service Station Quetta",
+    "Shell Quetta",
+    "petrol pump Quetta",
+    "fuel station Quetta",
+    "Shara-e-Zarghoon Quetta",
+    "car wash Quetta",
+    "diesel Quetta",
+    "engine oil Quetta"
+  ],
+  alternates: { canonical: "https://awanautos.cyou/" },
+  robots: { index: true, follow: true },
   openGraph: {
-    title: "AWAN AUTOS | Quetta",
-    description: "Quality fuel, vehicle care and trusted automotive services in Quetta.",
-    type: "website",
+    title: "AWAN AUTOS | Shell Service Station Quetta",
+    description: "Quality fuel, lubricants and trusted automotive services at Awan Autos, Shara-e-Zarghoon, Quetta.",
+    url: "https://awanautos.cyou/",
+    siteName: "AWAN AUTOS",
+    locale: "en_PK",
+    type: "website"
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "AWAN AUTOS | Shell Service Station Quetta",
+    description: "Quality fuel, lubricants and trusted automotive services in Quetta."
+  }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
